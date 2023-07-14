@@ -1,6 +1,6 @@
 ---
 title: "Brownlows Bets"
-author: "Your Name Goes Here"
+author: "Diana Flores"
 output: 
   html_document:
     number_sections: true
@@ -31,6 +31,17 @@ There are 3 questions and there should be at least 3 separate commits, at least 
 1. What are the fair odds for a bet on matching birthdays in a 35 person class.
 2. For what size class is a 2:1 odds bet fair.
 3. How much money would Brownlow be expected to end up with if the bets went as described.
+
+```{r}
+numClass=22
+odds=1
+countoDo=637
+bet1 = BrLw(numClass,odds,countoDo)
+
+print(bet1)
+```
+
+
 
 ## Our strategy is to build a Function and the use it to answer the three questions. 
 
